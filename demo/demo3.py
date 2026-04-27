@@ -7,7 +7,7 @@ from langgraph.prebuilt import chat_agent_executor
 from env_utils import LANGCHAIN_API_KEY, TAVILY_API_KEY
 from init_llm import deepseek_llm
 
-# 无法使用OpenAIEmbeddings()  -->  使用国内千文   -->  关闭代理服务器
+
 os.environ['http_proxy'] = 'http://127.0.0.1:33210'
 os.environ['https_proxy'] = 'http://127.0.0.1:33210'
 
